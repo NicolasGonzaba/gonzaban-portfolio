@@ -1,65 +1,49 @@
 import Image from "next/image";
+import profile from "@/public/assets/Profile_Pic.jpg"
+import CardComponent from "./components/CardComponent";
+import HTML from "@/public/assets/HTML-CSS.png"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="flex min-h-screen justify-center flex-col text-white font-sans bg-[url(/assets/Background-1.jpg)] bg-cover">
+      <main className=" flex m-15 justify-center content-center">
+        <div className=" m-15 mt-30">
+          <h2 className="text-3xl">Hello, I am  </h2>
+          <h1 className="text-5xl mt-5">Nicolas Gonzaba </h1>
+          <h2 className="text-4xl text-center">Web Developer</h2>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div>
+          <Image alt="" src={profile} className="max-w-100"></Image>
         </div>
       </main>
+      <div className="text-center">
+        <h3 className="text-2xl mb-5">I am currently a Junior web Developer who is currently schooling at CodeStack Academy. I am proficient in C#, HTML, JavaScript, CSS, Unity, Next.JS, and TypeScript. I Excel at creating the backends of applications and fixing bugs in code.</h3>
+        {/* <h1 className="text-4xl">About Me</h1> */}
+        <h3 className="text-2xl">I enjoy your </h3>
+      </div>
+      <div className="text-center m-5">
+        <h1 className="text-4xl">My Profciencies</h1>
+        <div className="flex">
+        {/* <Image alt="" src={CSS} className="max-w-120"></Image> */}
+        <Image alt="" src={HTML} className="max-w-100"></Image>
+        </div>
+      </div>
+      <div className="flex flex-col text-center">  
+        <h1 className="text-5xl"> My Projects</h1>
+        <div className="flex justify-between m-15">
+        <CardComponent title="Influential Person" description="A website dedicated to person who was very influential to my life, Kazuki Takahashi. Coded with Next.JS and TypeScript" image="assets/Takahashi.jpeg" link="https://polite-bush-0b44e241e.6.azurestaticapps.net/" ></CardComponent>
+        <CardComponent title="Rock Paper Scisssors Lizard Spock" description="A website That allows you tplay a game rock paper scissors lizard spock wither against a CPU or against another player. Coded with CSS, Javascript, and an API made by me and hosted on Azure"  image="assets/RPSLS.jpeg" link="https://polite-tree-0e829b71e.6.azurestaticapps.net/" ></CardComponent>
+        <CardComponent title="Gaming Trivia" description="A Gaming Trivia quiz that has 3 different difficulties and 100 questions in each difficulty. Made and hosted on Unity and styled on Canva."  image="assets/Trivia-Quiz.jpeg" link="https://play.unity.com/en/games/2fc3ceb3-14b7-4e50-a3b4-18757612689f/gamingtriviav1/" ></CardComponent>
+        </div>
+
+      </div>
+      <div className="text-center mt-20 mb-20">
+        <h1 className="text-4xl">Contact Me</h1>
+        <h3>LinkedIn: https://www.linkedin.com/in/nicolas-gonzaba-6782143b7/</h3>
+        <h3>Email: Https://nicolasgonzaba1@gmail.com</h3>
+        <h3>GitHub: https://github.com/NicolasGonzaba</h3>
+        <h3>Phone Number: (209) 395-7191</h3>
+      </div>
     </div>
   );
 }
