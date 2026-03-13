@@ -22,9 +22,9 @@ export default function Home() {
       <h1 className="text-7xl mb-10 text-center font-(family-name:--font-michroma)">About Me</h1>
       <div className="text-center bg-blue-800 ms-10 me-10">
         
-        <h3 className="text-3xl mb-5 font-(family-name:--font-geist-mono)">I am currently a Junior web Developer who is currently schooling at CodeStack Academy. I am proficient in C#, HTML, JavaScript, CSS, Unity, Next.JS, and TypeScript. I Excel at creating the backends of applications and fixing bugs in code and love the endless growth and creativity coding allows.</h3>
+        <h3 className="text-3xl font-(family-name:--font-geist-mono) m-3">I am currently a Junior web Developer who is currently schooling at CodeStack Academy. I am proficient in C#, HTML, JavaScript, CSS, Unity, Next.JS, and TypeScript. I Excel at creating the backends of applications and fixing bugs in code and love the endless growth and creativity coding allows.</h3>
         
-        <h3 className="text-3xl">I enjoy fast paced environments that always have me busy and give me oppurtunities to show my creativity. I also enjoy working with others and being able to share my perspective with others and learning from them in return. In my free time i ejoy playing card games, watching and analyzing movies and playing video games.</h3>
+        <h3 className="text-3xl m-3">I enjoy fast paced environments that always have me busy and give me oppurtunities to show my creativity. I also enjoy working with others and being able to share my perspective with others and learning from them in return. In my free time i ejoy playing card games, watching and analyzing movies and playing video games.</h3>
       </div>
       <div className="text-center m-5">
         <h1 className="text-7xl font-(family-name:--font-michroma)">My Profciencies</h1>
@@ -40,18 +40,19 @@ export default function Home() {
         <h1 className="text-7xl font-(family-name:--font-michroma)"> My Projects</h1>
         <div className="flex justify-between m-15">
           <CardComponent title="Influential Person" description="A website dedicated to person who was very influential to my life, Kazuki Takahashi. Coded with Next.JS and TypeScript" image="assets/Takahashi.jpeg" link="https://polite-bush-0b44e241e.6.azurestaticapps.net/" ></CardComponent>
-          <CardComponent title="Rock Paper Scisssors Lizard Spock" description="A website That allows you tplay a game rock paper scissors lizard spock wither against a CPU or against another player. Coded with CSS, Javascript, and an API made by me and hosted on Azure" image="assets/RPSLS.jpeg" link="https://polite-tree-0e829b71e.6.azurestaticapps.net/" ></CardComponent>
+
+          <CardComponent title="Rock Paper Scisssors Lizard Spock" description="A website That allows you tplay a game rock paper scissors lizard spock wither against a CPU or against another player. Coded with CSS, Javascript, HTML, and an API made by me and hosted on Azure" image="assets/RPSLS.jpeg" link="https://polite-tree-0e829b71e.6.azurestaticapps.net/" ></CardComponent>
+
           <CardComponent title="Gaming Trivia" description="A Gaming Trivia quiz that has 3 different difficulties and 100 questions in each difficulty. Made and hosted on Unity and styled on Canva." image="assets/Trivia-Quiz.jpeg" link="https://play.unity.com/en/games/2fc3ceb3-14b7-4e50-a3b4-18757612689f/gamingtriviav1/" ></CardComponent>
         </div>
 
       </div>
       <div className="text-center mb-20">
         <h1 className="text-4xl mb-3">Contact Me</h1>
-        <h3 className="mb-3"> Linked In: <a href="https://www.linkedin.com/in/nicolas-gonzaba-6782143b7"> https://www.linkedin.com/in/nicolas-gonzaba-6782143b7/</a></h3>
+        <h3 className="mb-3"> LinkedIn: <a href="https://www.linkedin.com/in/nicolas-gonzaba-6782143b7"> https://www.linkedin.com/in/nicolas-gonzaba-6782143b7/</a></h3>
         <h3 className="mb-3">GitHub: <a href="https://github.com/NicolasGonzaba"> https://github.com/NicolasGonzaba</a></h3>
         <h3 className="mb-3">Email: Https://nicolasgonzaba1@gmail.com</h3>
         <h3>Phone Number: (209) 395-7191</h3>
-        <a href="https://www.linkedin.com/in/nicolas-gonzaba-6782143b7">Linked In</a>
       </div>
     </div>
   );
