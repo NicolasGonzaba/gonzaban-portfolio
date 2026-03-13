@@ -13,7 +13,7 @@ export default function Home() {
         <div className=" m-15 mt-30">
           <h2 className="text-3xl ">Hello, I am  </h2>
           <h1 className="text-7xl mt-5 text-blue-500 font-(family-name:--font-michroma)">Nicolas Gonzaba </h1>
-          <h2 className="text-5xl text-center text-amber-300 font-(family-name:--font-roboto-slab)">Web Developer</h2>
+          <h2 className="text-5xl text-center text-amber-300 font-(family-name:--font-roboto-slab)">Future Web Developer</h2>
         </div>
         <div className="ms-30 border-red-500">
           <Image alt="" src={profile} className="max-w-80"></Image>
@@ -47,10 +47,11 @@ export default function Home() {
       </div>
       <div className="text-center mb-20">
         <h1 className="text-4xl mb-3">Contact Me</h1>
-        <h3 className="mb-3">Linked In: https://www.linkedin.com/in/nicolas-gonzaba-6782143b7/</h3>
+        <h3 className="mb-3"> Linked In: <a href="https://www.linkedin.com/in/nicolas-gonzaba-6782143b7"> https://www.linkedin.com/in/nicolas-gonzaba-6782143b7/</a></h3>
+        <h3 className="mb-3">GitHub: <a href="https://github.com/NicolasGonzaba"> https://github.com/NicolasGonzaba</a></h3>
         <h3 className="mb-3">Email: Https://nicolasgonzaba1@gmail.com</h3>
-        <h3 className="mb-3">GitHub: https://github.com/NicolasGonzaba</h3>
         <h3>Phone Number: (209) 395-7191</h3>
+        <a href="https://www.linkedin.com/in/nicolas-gonzaba-6782143b7">Linked In</a>
       </div>
     </div>
   );
