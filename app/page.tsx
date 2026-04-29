@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profile from "@/public/assets/Profile_Pic.jpg"
+import profile from "@/public/assets/19-CSAs8_Headshots.jpg"
 import CardComponent from "./components/CardComponent";
 import HTML from "@/public/assets/HTML-CSS.png"
 import JS from "@/public/assets/img_javascript.jpg"
